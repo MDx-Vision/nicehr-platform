@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>NICEHR — Platform</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+<style>
+  @page { size: letter; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: #0A0A0A;
+    background: #fff;
+    font-size: 10pt;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-feature-settings: "ss01";
+  }
+  .page {
+    width: 8.5in;
+    min-height: 11in;
+    margin: 0 auto;
+    padding: 0.75in 0.85in;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Header — minimal nav-style */
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.1in;
+  }
+  .wordmark {
+    font-size: 11pt;
+    font-weight: 800;
+    letter-spacing: -0.2px;
+    color: #0A0A0A;
+  }
+  .nav-meta {
+    font-size: 8.5pt;
+    font-weight: 500;
+    color: #6B6B6B;
+  }
+
+  /* Hero */
+  .hero { margin-bottom: 1in; }
+  h1 {
+    font-size: 38pt;
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: -1.6px;
+    color: #0A0A0A;
+    margin-bottom: 28px;
+    max-width: 100%;
+  }
+  .lede {
+    font-size: 13pt;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #4A4A4A;
+    max-width: 5.6in;
+    letter-spacing: -0.2px;
+  }
+
+  /* Lifecycle band */
+  .lifecycle {
+    display: flex;
+    gap: 36px;
+    margin-bottom: 0.85in;
+    padding-top: 4px;
+  }
+  .phase {
+    font-size: 10pt;
+    font-weight: 700;
+    color: #0A0A0A;
+    letter-spacing: -0.2px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .dot {
+    width: 6px;
+    height: 6px;
+    background: #6B9BD8;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  /* Three stats — pure typography */
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.6in;
+    margin-bottom: 0.9in;
+    padding-top: 28px;
+    border-top: 1px solid #0A0A0A;
+  }
+  .stat .num {
+    font-size: 28pt;
+    font-weight: 800;
+    letter-spacing: -1.2px;
+    line-height: 1;
+    color: #0A0A0A;
+    margin-bottom: 6px;
+  }
+  .stat .label {
+    font-size: 9pt;
+    font-weight: 500;
+    color: #6B6B6B;
+    line-height: 1.4;
+    max-width: 1.8in;
+  }
+
+  /* Pillars — clean three column */
+  .pillars {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5in;
+    margin-bottom: 0.9in;
+  }
+  .pillar h3 {
+    font-size: 13pt;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    color: #0A0A0A;
+    margin-bottom: 10px;
+    line-height: 1.15;
+  }
+  .pillar p {
+    font-size: 9.5pt;
+    font-weight: 400;
+    color: #4A4A4A;
+    line-height: 1.55;
+  }
+
+  /* Built differently — single statement */
+  .thesis {
+    margin-bottom: 0.4in;
+    padding-top: 28px;
+    border-top: 1px solid #0A0A0A;
+  }
+  .thesis-label {
+    font-size: 8pt;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #6B9BD8;
+    margin-bottom: 14px;
+  }
+  .thesis p {
+    font-size: 14pt;
+    font-weight: 500;
+    line-height: 1.35;
+    color: #0A0A0A;
+    letter-spacing: -0.4px;
+    max-width: 6.4in;
+  }
+
+  /* Foot */
+  .foot {
+    margin-top: auto;
+    padding-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-size: 8pt;
+    color: #6B6B6B;
+    border-top: 1px solid #E5E5E5;
+  }
+  .foot strong { color: #0A0A0A; font-weight: 700; }
+  .foot .right { text-align: right; line-height: 1.6; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="nav">
+    <div class="wordmark">NICEHR</div>
+    <div class="nav-meta">Platform · 2026</div>
+  </div>
+
+  <div class="hero">
+    <h1>One View.<br>Continuous EHR Control.</h1>
+    <p class="lede">Proprietary platform built, owned, and operated by The NICEHR Group. One operating lens for EHR environments — before go-live, during cutover, after stabilization, or independent of any project at all.</p>
+  </div>
+
+  <div class="lifecycle">
+    <div class="phase"><span class="dot"></span>Before</div>
+    <div class="phase"><span class="dot"></span>During</div>
+    <div class="phase"><span class="dot"></span>After</div>
+    <div class="phase"><span class="dot"></span>Independent</div>
+  </div>
+
+  <div class="stats">
+    <div class="stat">
+      <div class="num">1,000+</div>
+      <div class="label">Consultants in network</div>
+    </div>
+    <div class="stat">
+      <div class="num">National</div>
+      <div class="label">Delivery footprint</div>
+    </div>
+    <div class="stat">
+      <div class="num">Continuous</div>
+      <div class="label">Lifecycle oversight</div>
+    </div>
+  </div>
+
+  <div class="pillars">
+    <div class="pillar">
+      <h3>One executive view.</h3>
+      <p>Across the enterprise systems hospitals already run — without the extra logins.</p>
+    </div>
+    <div class="pillar">
+      <h3>Continuous readiness scoring.</h3>
+      <p>Across the operational domains that decide go-live outcomes. Proprietary to NICEHR.</p>
+    </div>
+    <div class="pillar">
+      <h3>Live decision and change control.</h3>
+      <p>Risk, RACI, and change workflows on one surface, in real time.</p>
+    </div>
+  </div>
+
+  <div class="thesis">
+    <div class="thesis-label">Operating Thesis</div>
+    <p>This is not a point-in-time go-live model. NICEHR is proprietary software built, owned, and operated by The NICEHR Group — 100% consultant-owned, delivered exclusively by NICEHR.</p>
+  </div>
+
+  <div class="foot">
+    <div class="left">
+      <strong>The NICEHR Group</strong> · thenicehrgroup.com<br>
+      info@thenicehrgroup.com · 212-203-3513
+    </div>
+    <div class="right">
+      HIPAA · SOC 2 · HITRUST · SBA 8(a) · CMMI 3 · ISO<br>
+      © 2012–2026 The NICEHR Group · Proprietary &amp; Confidential · All rights reserved · Patent pending<br>
+      DUNS 078606581 · CAGE 7CTE3
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
